@@ -12,16 +12,13 @@ public class testmodel {
 		List<Date> DoctorlistHoliday = new ArrayList<Date>();
 		List<Date> DoctorlistHoliday1 = new ArrayList<Date>();
 		List<Date> DoctorlistHoliday2 = new ArrayList<Date>();
-		DoctorlistHoliday.add(12/11/2014);
-		DoctorlistHoliday1.add(10/11/2014);
-		DoctorlistHoliday2.add(13/11/2014);
-		//List<holidays> table;
-		  listDoctor.add(new Doctor(DoctorlistHoliday, 1, "kacem","nadia"));
-		  listDoctor.add(new Doctor(DoctorlistHoliday1, 2, "najeh","toumi"));
-		  listDoctor.add(new Doctor(DoctorlistHoliday1, 3, "najeh","toumi"));
-		  
-	
-		
+		DoctorlistHoliday.add(12 / 11 / 2014, null);
+		DoctorlistHoliday1.add(10 / 11 / 2014, null);
+		DoctorlistHoliday2.add(13 / 11 / 2014, null);
+		// List<holidays> table;
+		listDoctor.add(new Doctor(DoctorlistHoliday, 1, "kacem", "nadia"));
+		listDoctor.add(new Doctor(DoctorlistHoliday1, 2, "najeh", "toumi"));
+		listDoctor.add(new Doctor(DoctorlistHoliday2, 3, "najeh", "toumi"));
 
 	}
 

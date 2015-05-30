@@ -7,18 +7,6 @@ public class PlanningService {
 	public planning genereratePlanning (List<Doctor> doctors, Date starDate, Date endDate){
 		planning planning = new planning();
 		return  planning;
-<<<<<<< HEAD
-		
-		
-=======
-<<<<<<< HEAD
-		System.out.println("Hello World");
-System.out.println("Hello i'm zied");
-=======
-		System.out.print("hello word !!!!");
->>>>>>> d700a81f04e68dd529f4e25c89a12b3c76dfbd13
->>>>>>> 73bf8ed6b507e3556947ddfa6fe62c3cab04c6ad
-		
 	}
 //uses story1 
 }
