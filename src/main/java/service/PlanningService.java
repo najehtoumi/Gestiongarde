@@ -7,6 +7,7 @@ import java.util.List;
 import model.Planning;
 import model.Doctor;
 import java.util.HashMap;
+import model.ListDoctor;
 
 
 
@@ -41,7 +42,7 @@ public class PlanningService {
 		    		b=true;
 		    		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy");
 		    		h = sdf.parse(dateFormat.format(calendar.getTime()));
-		    		if(doctors.lDoctor.get(j).getHolidays().get(k).compareTo(d)==0 )
+		    		if(doctors.lDoctor.get(j).getHolidays().get(k).compareTo(h)==0 )
 		    		{
 		    			b=false;
 		    			j++;
@@ -51,7 +52,7 @@ public class PlanningService {
 		    	}
 		    	if(b==true)
 		    	{
-		    		p.getGardPlanning().put(h, doctors.lDoctor.indexOf(j));
+		    		p.getGardPlanning().put(h, doctors.lDoctor.get(j));
 		    		j++;
 		    	}
 	

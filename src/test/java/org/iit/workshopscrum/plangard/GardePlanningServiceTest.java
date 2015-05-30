@@ -16,14 +16,14 @@ import service.PlanningService;
 
 import org.junit.Test;
 
-public class PlanningServiceTest {
+public class GardePlanningServiceTest {
 
 	@Test
 	public void test_addDoctor_CaseManyDoctors() {
 		Planning p=new Planning();
 		PlanningService x= new PlanningService();
-		String dd="02/07/05";
-		String df="08/07/05";
+		String dd="02/07/10";
+		String df="08/07/10";
 		String s = "02/07/08";
 		String s1 = "07/06/10";
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy");
