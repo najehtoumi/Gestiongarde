@@ -16,6 +16,7 @@ public class PlanningService {
 	public planning genereratePlanning (List<Doctor> doctors, String starDate, String endDate){
 		planning planning = new planning();
 		int j=0;
+		Date h =new Date();
 		boolean b=true;
 		try {
 		    SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
@@ -28,7 +29,11 @@ public class PlanningService {
 		    calMax.setTime(dateMax);
 		    for (; calendar.before(calMax); calendar.add(Calendar.DATE, 1))
 		      {
-		    	 System.out.println(dateFormat.format(calendar.getTime()));
+		    	if (j>=doctors.length())
+		    	{
+		    		j=0;
+		    	}
+		    	for(int k =0;)
 		    	 
 		        //TODO Traitement
 		      }
