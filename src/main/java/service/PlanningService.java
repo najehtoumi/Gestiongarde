@@ -6,6 +6,7 @@ import java.util.Locale;
 import java.util.List;
 import model.Planning;
 import model.Doctor;
+import java.util.HashMap;
 
 
 
@@ -15,8 +16,8 @@ import java.io.*;
 
 import model.Doctor;
 public class PlanningService {
-	public Planning genereratePlanning (List<Doctor> doctors, String starDate, String endDate){
-		Planning planning = new Planning();
+	public Planning genereratePlanning (ListDoctor doctors, String starDate, String endDate){
+		Planning p = new Planning();
 		int j=0;
 		Date h =new Date();
 		boolean b=true;
@@ -31,11 +32,29 @@ public class PlanningService {
 		    calMax.setTime(dateMax);
 		    for (; calendar.before(calMax); calendar.add(Calendar.DATE, 1))
 		      {
-//		    	if (j>=doctors.length())
-//		    	{
-//		    		j=0;
-//		    	}
-		    	//for(int k =0)
+		    	if (j>=doctors.lDoctor.size())
+		    	{
+		    		j=0;
+		    	}
+		    	for(int k =0;k < doctors.lDoctor.get(j).getHolidays().size();k++)
+		    	{
+		    		b=true;
+		    		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy");
+		    		h = sdf.parse(dateFormat.format(calendar.getTime()));
+		    		if(doctors.lDoctor.get(j).getHolidays().get(k).compareTo(d)==0 )
+		    		{
+		    			b=false;
+		    			j++;
+		    			
+		    		}
+		    		
+		    	}
+		    	if(b==true)
+		    	{
+		    		p.getGardPlanning().put(h, doctors.lDoctor.indexOf(j));
+		    		j++;
+		    	}
+	
 		    	 
 		        //TODO Traitement
 		      }
@@ -43,7 +62,7 @@ public class PlanningService {
 		catch (ParseException e) 
 		{
 		}
-		return  planning;
+		return  p;
 	}
 //uses story1 
 }

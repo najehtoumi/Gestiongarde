@@ -4,11 +4,11 @@ import java.util.List;
 import java.util.ArrayList;
 public class Doctor {
 	// Declaration des champs des docteur 
-		private 	int id ;
-		private String nom;
-		private String prenom;
-		private List<Date> holidays;
-		List<Doctor> list = new ArrayList<Doctor>();
+		public 	int id ;
+		public String nom;
+		public String prenom;
+		public List<Date> holidays;
+		public List<Doctor> list = new ArrayList<Doctor>();
 		/*private List<Date> holidays;*/
 		//initalisation des champs des docteurs 
 	public Doctor(List<Date> holidays, int id, String prenom, String nom) {
