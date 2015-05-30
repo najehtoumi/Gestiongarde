@@ -39,9 +39,6 @@ public class PlanningService {
 		
 		
 		return  planning;
-		
-		
-		
 	}
-
+//uses story1 
 }
