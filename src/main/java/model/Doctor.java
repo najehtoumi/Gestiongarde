@@ -47,18 +47,6 @@ public class Doctor {
 	public List<Date> getHolidays() {
 		return holidays;
 	}
-	
-	public void setHolidays(List<Date> holidays) {
-		this.holidays = holidays;
-	}
 
-		  public void add(List<Doctor> listDoctor){
-		    for(Doctor D : listDoctor)
-		      list.add(D); 
 
-		    System.out.println("Contenu de notre liste des docteurs :");
-		    for(Doctor D : list)
-		      System.out.print(D.toString());		
-		   }
-	
 	}
