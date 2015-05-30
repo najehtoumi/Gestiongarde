@@ -1,0 +1,5 @@
+language: java
+notifications:
+   email:
+     recipients:
+      - mohamed.habib.khemiri@gmail.com
