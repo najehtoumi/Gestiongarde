@@ -4,15 +4,10 @@ import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.List;
-<<<<<<< HEAD
 import model.Planning;
 import model.Doctor;
-public class PlanningService {
-	public Planning genereratePlanning (List<Doctor> doctors, Date starDate, Date endDate){
-		Planning planning = new Planning();
-=======
 
-import model.planning;
+
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -20,8 +15,8 @@ import java.io.*;
 
 import model.Doctor;
 public class PlanningService {
-	public planning genereratePlanning (List<Doctor> doctors, String starDate, String endDate){
-		planning planning = new planning();
+	public Planning genereratePlanning (List<Doctor> doctors, String starDate, String endDate){
+		Planning planning = new Planning();
 		int j=0;
 		Date h =new Date();
 		boolean b=true;
@@ -36,11 +31,11 @@ public class PlanningService {
 		    calMax.setTime(dateMax);
 		    for (; calendar.before(calMax); calendar.add(Calendar.DATE, 1))
 		      {
-		    	if (j>=doctors.length())
-		    	{
-		    		j=0;
-		    	}
-		    	for(int k =0;)
+//		    	if (j>=doctors.length())
+//		    	{
+//		    		j=0;
+//		    	}
+		    	//for(int k =0)
 		    	 
 		        //TODO Traitement
 		      }
@@ -48,9 +43,6 @@ public class PlanningService {
 		catch (ParseException e) 
 		{
 		}
-		
-		
->>>>>>> ba3e0dd9371aa84500c594b958f3dba3ad48119c
 		return  planning;
 	}
 //uses story1 

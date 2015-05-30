@@ -6,8 +6,9 @@ import java.util.List;
 
 //import org.junit.Test;
 
+
 import model.Doctor;
-import model.planning;
+import model.Planning;
 import service.PlanningService;
 
 public class PlanningServiceTest {
@@ -18,6 +19,6 @@ public void test_DoctorListEmptyAndStartDateEqualEndDate(){
 	List<Doctor> doctors = new ArrayList<Doctor>();
 	String starDate = new String();
 	String endDate = new String();
-	planning planning = planningservice.genereratePlanning(doctors, starDate, endDate);
+	Planning planning = planningservice.genereratePlanning(doctors, starDate, endDate);
 	}
 }
