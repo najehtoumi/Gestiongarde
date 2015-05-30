@@ -4,6 +4,13 @@ import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.List;
+<<<<<<< HEAD
+import model.Planning;
+import model.Doctor;
+public class PlanningService {
+	public Planning genereratePlanning (List<Doctor> doctors, Date starDate, Date endDate){
+		Planning planning = new Planning();
+=======
 
 import model.planning;
 
@@ -43,6 +50,7 @@ public class PlanningService {
 		}
 		
 		
+>>>>>>> ba3e0dd9371aa84500c594b958f3dba3ad48119c
 		return  planning;
 	}
 //uses story1 
